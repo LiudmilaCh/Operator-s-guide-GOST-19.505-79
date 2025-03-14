@@ -1,0 +1,112 @@
+
+%\documentclass[a4paper,12pt]{article}
+\documentclass[11pt]{article}
+%\usepackage[a4paper, left=25mm, right=10mm, top=20mm, bottom=20mm]{geometry}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{times}
+\usepackage{titlepic}
+\usepackage{tcolorbox}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{multirow}
+\usepackage{tikz}
+\usepackage{array}
+\usepackage{caption}
+\usepackage[russian,english]{babel}
+\usepackage{hyphenat}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{tabularx}
+\usepackage{booktabs} % for better looking tables
+
+
+
+\usepackage[
+   left=2cm, top=0.5cm, bottom=0.5cm, right=0.5cm,
+    a4paper, portrait]{geometry} 
+    
+\thispagestyle{empty}
+\begin{document}
+
+% Титульный лист
+%\input{titlepage}
+ %  {\Large \textit{ООО "Лаборатория моделирования систем"}\par}
+    
+%\vspace{5cm}
+    % Заголовок
+% {\Huge \bfseries Руководство оператора \par}
+  %  \vspace{2cm}
+
+%    \vfill
+ %   {\large Date: \today\par}
+        
+
+\newpage
+\selectlanguage{russian}    
+\nointerlineskip\noindent%
+\vspace*{-\topskip}%
+\begin{tikzpicture}
+
+    \draw (0,0) rectangle (18.5cm,28.7cm) ;
+\end{tikzpicture}
+\section{Аннотация}
+
+\newpage
+%содержание
+\tableofcontents
+
+\newpage
+\section{Назначение программы}
+\input{section1.txt} % непосредственно подтягивается текст для этого раздела, все форматирование автоматически применяется
+
+\newpage
+\section{Условия выполнения программы}
+\input{section2.txt} % непосредственно подтягивается текст для этого раздела, все форматирование автоматически применяется
+
+\newpage
+\section{Выполнение программы}
+\input{section3.txt} % непосредственно подтягивается текст для этого раздела, все форматирование автоматически применяется
+
+\newpage
+\section{Сообщения оператору}
+\input{section4.txt} % непосредственно подтягивается текст для этого раздела, все форматирование автоматически применяется
+
+\newpage
+%\section{ЛИСТ РЕГИСТРАЦИИ ИЗМЕНЕНИЙ}
+\begin{table}[ht]
+    \centering
+    \begin{tabularx}{\textwidth}{|X|X|X|X|X|X|X|X|X|X|}
+        \hline
+        \multicolumn{10}{|c|}{\textbf{ЛИСТ РЕГИСТРАЦИИ ИЗМЕНЕНИЙ}} & \\
+        \hline
+        \multicolumn{5}{|c|}{\textbf{Номера листов (страниц)}} & \textbf{Всего листов (страниц) в докум} & \textbf{№ документа} & \textbf{Входящий № сопроводительного документа и дата} & \textbf{Подп.} & \textbf{Дата} \\
+        \hline
+        \textbf{Изм} & \textbf{изменен-ных} & \textbf{заменен-ных} & \textbf{новых} & \textbf{анулиро
+ванных
+} &  &  &  &  &  \\
+        \hline
+      &&&&&&&&& \\
+      \hline
+ %     &&&&&&&&& \\
+ %     \hline
+ %     &&&&&&&&& \\
+ %     \hline
+ %     &&&&&&&&& \\
+ %     \hline
+ %     &&&&&&&&&  \\
+ %     \hline
+ %     &&&&&&&&& \\
+ %     \hline
+ %     &&&&&&&&& \\
+ %     \hline
+ %     &&&&&&&&& \\
+ %     \hline
+ %     
+    \end{tabularx}
+
+\end{table}
+
+\end{document}
+
+
